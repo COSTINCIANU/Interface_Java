@@ -16,7 +16,7 @@ public class Guerrier extends  Personnage{
     // Redéfinition de la méthode attaquer avec 5%  de chance de renforcer sa défance
     @Override
     public void attaquer(Personnage cible) {
-        if(random.nextInt(10) < 5) {
+        if(random.nextInt(100) < 5) {
             setVie(getVie() + bonusDefense);
             System.out.println(getNom() + " rentorce sa défance et gagne " + bonusDefense + " points de vie !");
         }
